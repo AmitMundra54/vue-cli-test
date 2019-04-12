@@ -1,0 +1,12 @@
+.rm__customCard {
+    $width-array: (
+      1: 15%,
+      2: 70%,
+      3: 15%,
+    );
+    @each $width-name, $width-value in $width-array {
+      .rm__customCard-#{$width-name} {
+        width: $width-value;
+      }
+    }
+  }
